@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+
 const inquirer = require("inquirer");
 
 //const generateMarkdown = require("./utils/generateMarkdown.js")
@@ -17,12 +18,53 @@ const questions = [
         message:"What is your App title?",
     },
     {
+        type: "input",
+        name: "username",
+        message: "What is your Github username?",
+    },
+    {
+        type: "input",
+        name: "description",
+        message: "Write a description about your project and its functionality."
+    },
+    {
+        type: "input",
+        name: "installation",
+        message: "What are the steps required to install your project?"
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "State the languages or technologies associated with this project",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email?",
+    },
+    {
+        type: "input",
+        name: "fullname",
+        message: "What is your full name?",
+    },
+    {
         type: "list",
-        name: "lisence",
+        name: "license",
         message:"Pick on of the following lisences",
         choices: ["Mozilla", "Apache","Mit","BSD","GNU"]
     },
-];
+    {
+        type: "input",
+        name: "contributing",
+        message: "If you would like other developers to contribute to this project, please give some guidelines for them to do so.",
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "Provide a walkthrough of some tests of this appilcation."
+    },
+]
+   
 // this will prompt questions about your github and stuff
 
 
