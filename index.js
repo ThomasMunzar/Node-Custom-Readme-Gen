@@ -1,8 +1,9 @@
 // TODO: Include packages needed for this application
 
 const inquirer = require("inquirer");
-
-//const generateMarkdown = require("./utils/generateMarkdown.js")
+const path = require("path");
+const generateMarkdown = require("./utils/generateMarkdown");
+const fs = require("fs");
 
 // IMPORT THE generateMarkdown function  from generateMarkdown.js (in NODE JS we use ---- require('./generateMarkdown.js')** look at activity 15-16 as example
 // WILL use generate markdown to be the mainfunction of this page after importing.
@@ -51,7 +52,7 @@ const questions = [
         type: "list",
         name: "license",
         message:"Pick on of the following lisences",
-        choices: ["Mozilla", "Apache","Mit","BSD","GNU"]
+        choices: ["Mozilla", "Apache","Mit","BSD","GNU","None"]
     },
     {
         type: "input",
@@ -88,6 +89,8 @@ function init() {
         }).catch((error) => {
             console.log(error);
         });
+        generateMarkdown();
+        writeToFile(); //Calling write to file Func to create a file for new readme with user input
 }
 
 
@@ -95,6 +98,7 @@ function init() {
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFileSync(generateMarkdown)
     //NOW we create the README file
 }
 

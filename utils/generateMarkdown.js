@@ -1,8 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-if (license == "MIT"){
-  //get MIT badge
+function renderLicenseBadge(license) {
+  if (license !== "none" || null){
+   return `!* [![License](https://img.shields.io/badge/${license}-blue.svg)]
+   (https://opensource.org/licenses/Apache-2.0)`;
+  } else {
+    return "";
+  }
+
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -16,16 +21,17 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `#${data.title}
   
-
-## Description
-${data.description}
-
 ## Table of Contents 
-
+* [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
+*[Questions](#questions)
+* [Tests](#tests)
 * [License](#license)
+
+## Description
+${data.description}
 
 ## Installation
 
