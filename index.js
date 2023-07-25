@@ -1,7 +1,5 @@
 // TODO: Include packages needed for this application
-
 const inquirer = require("inquirer");
-const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
 
@@ -36,7 +34,7 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "State the languages or technologies associated with this project",
+        message: "State the languages or technologies associated with this project", 
     },
     {
         type: "input",
@@ -76,12 +74,12 @@ function init() {
     // Ask the USER QUESTIONS (an array)
     inquirer
         .prompt(
-            questions
-            /* Pass your questions in here */
-        )
+            questions)
+
         .then((answers) => {
             console.log(answers)
             let markDown = generateMarkdown(answers)
+            fs.writeFileSync("newReadMe.md", markDown)
             // Use user feedback for... whatever!!
             //need to save the answers to the questions asked (store them as ONE OBJECT {})
             // Create content from the answers (this will eventually be on the readme.) (invoke generateMarkdown function that we imported.)
@@ -89,17 +87,16 @@ function init() {
         }).catch((error) => {
             console.log(error);
         });
-        generateMarkdown();
-        writeToFile(); //Calling write to file Func to create a file for new readme with user input
+        
 }
 
 
 
-
+//NOW we create the README file
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFileSync(generateMarkdown)
-    //NOW we create the README file
+function writeToFile(answers) {
+  
+    
 }
 
 // Function call to initialize app
