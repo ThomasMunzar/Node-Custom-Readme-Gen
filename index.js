@@ -62,6 +62,11 @@ const questions = [
         name: "tests",
         message: "Provide a walkthrough of some tests of this appilcation."
     },
+    {
+        type: "input",
+        name: "credits",
+        message: "List your collaborators, if any, with links to their GitHub profiles." 
+    }
 ]
    
 // this will prompt questions about your github and stuff
