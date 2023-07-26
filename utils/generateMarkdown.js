@@ -57,7 +57,7 @@ If you have any further questions please contact me.
 ${data.contributing}
 ## Tests
 ${data.tests}
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
+
 
 ---
 
