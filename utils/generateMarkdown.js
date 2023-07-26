@@ -1,8 +1,8 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license !== "none" || null){
-   return `!* [![License](https://img.shields.io/badge/licence-${license}-blue.svg)](https://opensource.org/license/apache-2-0/)`;
+  if (license !== "none" || null) {
+    return `[![License](https://img.shields.io/badge/licence-${license}-blue.svg)]`;
   } else {
     return "";
   }
@@ -13,9 +13,9 @@ function renderLicenseBadge(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
   
-  # ${data.title}
+# ${data.title}
   
 ## Table of Contents 
 * [Description](#description)
@@ -49,7 +49,9 @@ If you have any further questions please contact me.
  - Github: [${data.username}](https://github.com/${data.username}/)
 
 ## License
- This project is using the ${data.license} license.
+ This project is covered under the ${data.license} license.
+
+ [${data.license}](opensource.org/license/${data.license}/)
 
 ## Contributing
 ${data.contributing}
@@ -63,7 +65,7 @@ Go the extra mile and write tests for your application. Then provide examples on
 
  
 `;
-// inject the stuff like "data.username" and so one..
+  // inject the stuff like "data.username" and so one..
 }
 
 module.exports = generateMarkdown;

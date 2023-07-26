@@ -1,7 +1,7 @@
 
-  !* [![License](https://img.shields.io/badge/licence-gpl 3.0-blue.svg)](https://opensource.org/license/apache-2-0/)
+[![License](https://img.shields.io/badge/licence-BSD-blue.svg)]
   
-  # BERRY
+# 
   
 ## Table of Contents 
 * [Description](#description)
@@ -13,14 +13,14 @@
 * [License](#license)
 
 ## Description
-eat berries to survive
+
 
 ## Installation
-bery
+
 
 
 ## Usage
-berrry picker
+
 Provide instructions and examples for use. Include screenshots as needed.
 
 
@@ -30,17 +30,19 @@ List your collaborators, if any, with links to their GitHub profiles.
 
 ## Questions
 If you have any further questions please contact me.
- - Name: Barry Anderson
- - Email: berrrry
- - Github: [BERY bOY](https://github.com/BERY bOY/)
+ - Name: 
+ - Email: 
+ - Github: [](https://github.com//)
 
 ## License
- This project is using the gpl 3.0 license.
+ This project is covered under the BSD license.
+
+ [BSD](opensource.org/license/BSD/)
 
 ## Contributing
-n/a
+
 ## Tests
-n/a
+
 Go the extra mile and write tests for your application. Then provide examples on how to run them.
 
 ---
