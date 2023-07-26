@@ -25,6 +25,11 @@ User MUST have Node.js and NPM inquirer installed.
 
 Node.js and  NPM Inquirer - are the languages used in this project
 
+here is a link to a video of the ReadMe Generator in action:
+
+[Readme Generator](https://drive.google.com/file/d/1cpMEF9Hqoc_7-WOqRMUFxXLfQFJC4Tci/view)
+
+
 ## Credits
 
 I would like to thank my fellow classmates, my tutors, teaching staff and my family for all the support through out this program.
